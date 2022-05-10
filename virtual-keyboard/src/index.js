@@ -5,9 +5,11 @@ import handleKeyDown from './handlers/handleKeyDown';
 import handleKeyUp from './handlers/handleKeyUp';
 import changeKeyboard from './help/changeKeyboard';
 
+if (!(localStorage.getItem('lang'))) {
+  localStorage.setItem('lang', 'en');
+}
 localStorage.setItem('capsOn', 'false');
 localStorage.setItem('shiftOn', 'false');
-localStorage.setItem('lang', 'en');
 const body = document.querySelector('body');
 const wrapper = document.createElement('div');
 wrapper.classList = 'wrapper';

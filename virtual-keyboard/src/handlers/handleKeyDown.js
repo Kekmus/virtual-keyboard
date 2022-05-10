@@ -2,14 +2,13 @@ import changeKeyboard from '../help/changeKeyboard';
 import changeLanguage from '../help/changeLanguage';
 
 export default function handleKeyDown(keyboard, textarea, event) {
-  console.log(event)
   textarea.focus();
   const { code } = event;
   const key = keyboard.querySelector(`[data-code="${code}"]`);
   key.classList.add('keyboard__key__active');
 
   const isSpecial = key.dataset.isspecial;
-  if (isSpecial && !(/Backspace|Enter/i.test(code))) {
+  if (isSpecial && !(/Backspace|Enter|ArrowRight|ArrowLeft|ArrowDown|ArrowUp/i.test(code))) {
     event.preventDefault();
   }
 

@@ -14,7 +14,6 @@ export default function handleMouseDown(textarea, event) {
     const isSpecial = key.dataset.isspecial;
 
     if (isSpecial) {
-      console.log(code);
       if (code === 'ShiftLeft' || code === 'ShiftRight') {
         localStorage.setItem('shiftOn', true);
         changeKeyboard();
@@ -27,8 +26,11 @@ export default function handleMouseDown(textarea, event) {
       }
 
       if(code === 'Tab') {
-        textarea.focus();
         textarea.value += '\t';
+      }
+
+      if(code === 'Backspace') {
+        textarea.value = textarea.value.slice(0, -1);
       }
     } else {
       const { value } = key.dataset;
