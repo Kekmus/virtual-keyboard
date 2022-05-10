@@ -1,10 +1,11 @@
-import innerHtml from './innerHtml';
+import innerHtml from './help/innerHtml';
 import handleMouseDown from './handlers/handleMouseDown';
 import handleMouseUp from './handlers/handleMouseUp';
 import handleKeyDown from './handlers/handleKeyDown';
 import handleKeyUp from './handlers/handleKeyUp';
 
-localStorage.setItem('capsDegree', 'false');
+localStorage.setItem('capsOn', 'false');
+localStorage.setItem('shiftOn', 'false');
 localStorage.setItem('lang', 'en');
 const body = document.querySelector('body');
 const wrapper = document.createElement('div');

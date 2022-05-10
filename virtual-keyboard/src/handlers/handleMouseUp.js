@@ -5,11 +5,11 @@ export default function handleMouseDown(textarea, event) {
     const key = event.target;
 
     const { value } = key.dataset;
+    const { code } = key.dataset;
 
-    if (value === 'Shift') {
-      const newCapsDegree = !JSON.parse(localStorage.getItem('capsDegree'));
-      localStorage.setItem('capsDegree', newCapsDegree);
-      changeKeyboard(newCapsDegree);
+    if (code === 'ShiftLeft' || code === 'ShiftRight') {
+      localStorage.setItem('shiftOn', false);
+      changeKeyboard();
     }
 
     key.classList.remove('keyboard__key__active');

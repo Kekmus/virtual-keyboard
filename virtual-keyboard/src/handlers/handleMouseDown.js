@@ -3,7 +3,6 @@ import changeKeyboard from '../help/changeKeyboard';
 export default function handleMouseDown(textarea, event) {
   if (event.target.classList.contains('keyboard__key')) {
     const key = event.target;
-    const { code } = key.dataset;
 
     if (key.classList.contains('keyboard__key__active')) {
       return;
@@ -11,20 +10,25 @@ export default function handleMouseDown(textarea, event) {
 
     key.classList.add('keyboard__key__active');
 
-    const { value } = key.dataset;
+    const { code } = key.dataset;
+    const isSpecial = key.dataset.isspecial;
 
-    if (value === 'Shift') {
-      const newCapsDegree = !JSON.parse(localStorage.getItem('capsDegree'));
-      localStorage.setItem('capsDegree', newCapsDegree);
-      changeKeyboard(newCapsDegree);
-      return;
-    }
+    if (isSpecial) {
+      console.log(code);
+      if (code === 'ShiftLeft' || code === 'ShiftRight') {
+        localStorage.setItem('shiftOn', true);
+        changeKeyboard();
+        return;
+      }
 
-    const isCaps = localStorage.getItem('capsDegree') % 2 === 1;
-
-    if(isCaps) {
-      textarea.value += value.toUpperCase() ;
+      if (code === 'CapsLock') {
+        const newCapsDegree = !JSON.parse(localStorage.getItem('capsOn'));
+        localStorage.setItem('capsOn', newCapsDegree);
+        changeKeyboard();
+        return;
+      }
     } else {
+      const { value } = key.dataset;
       textarea.value += value;
     }
   }
