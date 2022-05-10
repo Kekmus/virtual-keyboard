@@ -1,5 +1,4 @@
-export default `<p>Сделаю до среды</p>
-<textarea autofocus></textarea>
+export default `<textarea autofocus></textarea>
   <div class="keyboard">
     <div class="keyboard__row">
       <div class="keyboard__key" data-code="Escape" data-value="Escape" data-isSpecial="true">Esc</div>
@@ -32,7 +31,6 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="BracketLeft" data-value="[">[</div>
       <div class="keyboard__key" data-code="BracketRight" data-value="]">]</div>
       <div class="keyboard__key" data-code="Backslash" data-value="\\">\\</div>
-      <div class="keyboard__key" data-code="Delete" data-value="Delete" data-isSpecial="true">del</div>
     </div>
     <div class="keyboard__row">
       <div class="keyboard__key" data-code="CapsLock" data-value="CapsLock" data-isSpecial="true">Cps Lck</div>
@@ -61,8 +59,9 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="Comma" data-value=",">,</div>
       <div class="keyboard__key" data-code="Period" data-value=".">.</div>
       <div class="keyboard__key" data-code="Slash" data-value="/">/</div>
-      <div class="keyboard__key" data-code="ArrowUp" data-value="ArrowUp" data-isSpecial="true">up</div>
       <div class="keyboard__key" data-code="ShiftRight" data-value="Shift" data-isSpecial="true">Shift</div>
+      <div class="keyboard__key" data-code="ArrowUp" data-value="ArrowUp" data-isSpecial="true">up</div>
+      <div class="keyboard__key" data-code="Delete" data-value="Delete" data-isSpecial="true">del</div>
     </div>
     <div class="keyboard__row">
       <div class="keyboard__key" data-code="ControlLeft" data-value="Ctrl" data-isSpecial="true">Ctrl</div>
@@ -76,4 +75,5 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="ArrowRight" data-value="ArrowRight" data-isSpecial="true">right</div>
     </div>
   </div>
+  <p class="switch__lang">Switch language: alt + shift</p>
 `;

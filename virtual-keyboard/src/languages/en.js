@@ -1,5 +1,5 @@
 export default {
-  Escape: 'Escape',
+  Escape: 'Esc',
   Digit1: '1',
   Digit2: '2',
   Digit3: '3',
@@ -53,7 +53,7 @@ export default {
   Slash: '/',
   ShiftRight: 'Shift',
   ControlLeft: 'Ctrl',
-  MetaLeft: 'Win',
+  MetaLeft: 'Super',
   AltLeft: 'Alt',
   Space: 'Space',
   AltRight: 'Alt',
@@ -62,5 +62,5 @@ export default {
   ArrowLeft: 'Left',
   ArrowRight: 'Right',
   ArrowDown: 'Down',
-  Delete: 'Delete',
+  Delete: 'Del',
 };
