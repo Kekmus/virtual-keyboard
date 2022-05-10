@@ -51,11 +51,12 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+  user-select: none;
+  transition: 0.1s;
 
-  &.active {
+  &__active {
     background-color: teal;
-    transition: 0.5s;
+    transition: 0.1s;
   }
 }
 
