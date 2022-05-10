@@ -18,18 +18,21 @@ export default function handleMouseDown(textarea, event) {
       if (code === 'ShiftLeft' || code === 'ShiftRight') {
         localStorage.setItem('shiftOn', true);
         changeKeyboard();
-        return;
       }
 
       if (code === 'CapsLock') {
         const newCapsDegree = !JSON.parse(localStorage.getItem('capsOn'));
         localStorage.setItem('capsOn', newCapsDegree);
         changeKeyboard();
-        return;
+      }
+
+      if(code === 'Tab') {
+        textarea.focus();
+        textarea.value += '\t';
       }
     } else {
       const { value } = key.dataset;
-      textarea.value += value;
+      textarea.value += value === 'Space' ? ' ' : value;
     }
   }
 }

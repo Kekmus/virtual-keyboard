@@ -66,7 +66,7 @@ export default `<p>Сделаю до среды</p>
     </div>
     <div class="keyboard__row">
       <div class="keyboard__key" data-code="ControlLeft" data-value="Ctrl" data-isSpecial="true">Ctrl</div>
-      <div class="keyboard__key" data-code="Meta" data-value="Meta" data-isSpecial="true">Meta</div>
+      <div class="keyboard__key" data-code="MetaLeft" data-value="Meta" data-isSpecial="true">Meta</div>
       <div class="keyboard__key" data-code="AltLeft" data-value="Alt" data-isSpecial="true">Alt</div>
       <div class="keyboard__key" data-code="Space" data-value=" ">Space</div>
       <div class="keyboard__key" data-code="AltRight" data-value="Alt" data-isSpecial="true">Alt</div>

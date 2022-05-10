@@ -53,7 +53,7 @@ export default {
   Slash: '.',
   ShiftRight: 'Shift',
   ControlLeft: 'Ctrl',
-  Meta: 'Win',
+  MetaLeft: 'Win',
   AltLeft: 'Alt',
   Space: 'Space',
   AltRight: 'Alt',
