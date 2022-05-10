@@ -10,8 +10,8 @@ export default `<textarea autofocus></textarea>
       <div class="keyboard__key" data-code="Digit6" data-value="6">6</div>
       <div class="keyboard__key" data-code="Digit7" data-value="7">7</div>
       <div class="keyboard__key" data-code="Digit8" data-value="8">8</div>
-      <div class="keyboard__key" data-code="Digit0" data-value="9">9</div>
-      <div class="keyboard__key" data-code="Digit9" data-value="0">0</div>
+      <div class="keyboard__key" data-code="Digit9" data-value="9">9</div>
+      <div class="keyboard__key" data-code="Digit0" data-value="0">0</div>
       <div class="keyboard__key" data-code="Minus" data-value="-">-</div>
       <div class="keyboard__key" data-code="Equal" data-value="=">=</div>
       <div class="keyboard__key" data-code="Backspace" data-value="Backspace" data-isSpecial="true">bksp</div>
