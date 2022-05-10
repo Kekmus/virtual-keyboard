@@ -2,7 +2,7 @@ export default `<p>Сделаю до среды</p>
 <textarea autofocus></textarea>
   <div class="keyboard">
     <div class="keyboard__row">
-      <div class="keyboard__key" data-code="Escape" data-value="Escape">Esc</div>
+      <div class="keyboard__key" data-code="Escape" data-value="Escape" data-special="true">Esc</div>
       <div class="keyboard__key" data-code="Digit1" data-value="1">1</div>
       <div class="keyboard__key" data-code="Digit2" data-value="2">2</div>
       <div class="keyboard__key" data-code="Digit3" data-value="3">3</div>
@@ -15,10 +15,10 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="Digit9" data-value="0">0</div>
       <div class="keyboard__key" data-code="Minus" data-value="-">-</div>
       <div class="keyboard__key" data-code="Equal" data-value="=">=</div>
-      <div class="keyboard__key" data-code="Backspace" data-value="Backspace">bksp</div>
+      <div class="keyboard__key" data-code="Backspace" data-value="Backspace" data-special="true">bksp</div>
     </div>
     <div class="keyboard__row">
-      <div class="keyboard__key" data-code="Tab" data-value="Tab">tab</div>
+      <div class="keyboard__key" data-code="Tab" data-value="Tab" data-special="true">tab</div>
       <div class="keyboard__key" data-code="KeyQ" data-value="q">q</div>
       <div class="keyboard__key" data-code="KeyW" data-value="w">w</div>
       <div class="keyboard__key" data-code="KeyE" data-value="e">e</div>
@@ -32,10 +32,10 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="BracketLeft" data-value="[">[</div>
       <div class="keyboard__key" data-code="BracketRight" data-value="]">]</div>
       <div class="keyboard__key" data-code="Backslash" data-value="\\">\\</div>
-      <div class="keyboard__key" data-code="Delete" data-value="Delete">del</div>
+      <div class="keyboard__key" data-code="Delete" data-value="Delete" data-special="true">del</div>
     </div>
     <div class="keyboard__row">
-      <div class="keyboard__key" data-code="CapsLock" data-value="CapsLock">Cps Lck</div>
+      <div class="keyboard__key" data-code="CapsLock" data-value="CapsLock" data-special="true">Cps Lck</div>
       <div class="keyboard__key" data-code="KeyA" data-value="a">a</div>
       <div class="keyboard__key" data-code="KeyS" data-value="s">s</div>
       <div class="keyboard__key" data-code="KeyD" data-value="d">d</div>
@@ -47,10 +47,10 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="KeyL" data-value="l">l</div>
       <div class="keyboard__key" data-code="Semicolon" data-value=";">;</div>
       <div class="keyboard__key" data-code="Quote" data-value="'">'</div>
-      <div class="keyboard__key" data-code="Enter" data-value="Enter">Enter</div>
+      <div class="keyboard__key" data-code="Enter" data-value="Enter" data-special="true">Enter</div>
     </div>
     <div class="keyboard__row">
-      <div class="keyboard__key" data-code="ShiftLeft" data-value="Shift">Shift</div>
+      <div class="keyboard__key" data-code="ShiftLeft" data-value="Shift" data-special="true">Shift</div>
       <div class="keyboard__key" data-code="KeyZ" data-value="z">z</div>
       <div class="keyboard__key" data-code="KeyX" data-value="x">x</div>
       <div class="keyboard__key" data-code="KeyC" data-value="c">c</div>
@@ -61,19 +61,19 @@ export default `<p>Сделаю до среды</p>
       <div class="keyboard__key" data-code="Comma" data-value=",">,</div>
       <div class="keyboard__key" data-code="Period" data-value=".">.</div>
       <div class="keyboard__key" data-code="Slash" data-value="/">/</div>
-      <div class="keyboard__key" data-code="ArrowUp" data-value="ArrowUp">up</div>
-      <div class="keyboard__key" data-code="ShiftRight" data-value="Shift">Shift</div>
+      <div class="keyboard__key" data-code="ArrowUp" data-value="ArrowUp" data-special="true">up</div>
+      <div class="keyboard__key" data-code="ShiftRight" data-value="Shift" data-special="true">Shift</div>
     </div>
     <div class="keyboard__row">
-      <div class="keyboard__key" data-code="ControlLeft" data-value="Ctrl">Ctrl</div>
-      <div class="keyboard__key" data-code="Meta" data-value="Meta">Meta</div>
-      <div class="keyboard__key" data-code="AltLeft" data-value="Alt">Alt</div>
+      <div class="keyboard__key" data-code="ControlLeft" data-value="Ctrl" data-special="true">Ctrl</div>
+      <div class="keyboard__key" data-code="Meta" data-value="Meta" data-special="true">Meta</div>
+      <div class="keyboard__key" data-code="AltLeft" data-value="Alt" data-special="true">Alt</div>
       <div class="keyboard__key" data-code="Space" data-value=" ">Space</div>
-      <div class="keyboard__key" data-code="AltRight" data-value="Alt">Alt</div>
-      <div class="keyboard__key" data-code="ControlRight" data-value="Ctrl">Ctrl</div>
-      <div class="keyboard__key" data-code="ArrowLeft" data-value="ArrowLeft">left</div>
-      <div class="keyboard__key" data-code="ArrowDown" data-value="ArrowDown">down</div>
-      <div class="keyboard__key" data-code="ArrowRight" data-value="ArrowRight">right</div>
+      <div class="keyboard__key" data-code="AltRight" data-value="Alt" data-special="true">Alt</div>
+      <div class="keyboard__key" data-code="ControlRight" data-value="Ctrl" data-special="true">Ctrl</div>
+      <div class="keyboard__key" data-code="ArrowLeft" data-value="ArrowLeft" data-special="true">left</div>
+      <div class="keyboard__key" data-code="ArrowDown" data-value="ArrowDown" data-special="true">down</div>
+      <div class="keyboard__key" data-code="ArrowRight" data-value="ArrowRight" data-special="true">right</div>
     </div>
   </div>
 `;

@@ -1,4 +1,4 @@
-import changeKeyboard from "../changeKeyboard";
+import changeKeyboard from '../help/changeKeyboard';
 
 export default function handleMouseDown(textarea, event) {
   if (event.target.classList.contains('keyboard__key')) {
@@ -16,7 +16,7 @@ export default function handleMouseDown(textarea, event) {
     if (value === 'Shift') {
       const newCapsDegree = !JSON.parse(localStorage.getItem('capsDegree'));
       localStorage.setItem('capsDegree', newCapsDegree);
-      changeKeyboard();
+      changeKeyboard(newCapsDegree);
       return;
     }
 

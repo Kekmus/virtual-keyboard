@@ -1,4 +1,4 @@
-import changeKeyboard from "../changeKeyboard";
+import changeKeyboard from "../help/changeKeyboard";
 
 export default function handleKeyDown(keyboard, textarea, event) {
   textarea.focus();
