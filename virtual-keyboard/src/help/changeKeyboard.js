@@ -14,7 +14,7 @@ export default function changeKeyboard() {
       const isSpecial = key.dataset.isspecial;
       const newValue = languages[currentLang][code];
       key.setAttribute('data-value', newValue);
-      if (isCaps && !isSpecial) {
+      if (isCaps && !isSpecial && code !== 'Space') {
         key.innerHTML = newValue.toUpperCase();
       } else {
         key.innerHTML = newValue;

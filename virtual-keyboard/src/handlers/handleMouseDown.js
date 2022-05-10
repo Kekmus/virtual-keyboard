@@ -32,6 +32,10 @@ export default function handleMouseDown(textarea, event) {
       if(code === 'Backspace') {
         textarea.value = textarea.value.slice(0, -1);
       }
+
+      if(code === 'Enter') {
+        textarea.value += '\n';
+      }
     } else {
       const { value } = key.dataset;
       textarea.value += value === 'Space' ? ' ' : value;
