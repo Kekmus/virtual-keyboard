@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$background-color: #fcfaf7;
+$keyboard-color: #e0dbd8;
+$text-color: #4c3d39;
+$border-color: #5a5552;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; 
+  background-color: $background-color;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 860px;
+  height: 150px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  border: none;
+  resize: none;
+  background-color: $background-color;
+  border-color: $keyboard-color;
+  color: $text-color;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 13px 10px rgba(0,0,0,0.25);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.keyboard {
+  width: 860px;
+  height: max-content;
+  border: 1px solid $keyboard-color;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: $keyboard-color;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 13px 10px rgba(0,0,0,0.25);
+}
+
+.keyboard__row {
+  display: flex;
+  gap: 3px;	
+}
+
+.keyboard__key {
+  $size: 50px;
+  width: $size;
+  height: $size;
+  border: 1px solid $border-color;
+  color: $text-color;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 
+  0px 3px 2px 0px rgba(0,0,0,0.3),
+  0 -0 0.02em rgba(0, 0, 0, 0.2) inset, 
+	0 0.05em 0.02em rgba(255, 255, 255, 0.5) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: 0.1s;
+  position: relative;
+
+  &__active {
+    transform: translate(0px, 5px);
+    box-shadow: 
+    0px 1px 0px 0px,
+    0 -0 0.02em rgba(0, 0, 0, 0.2) inset, 
+	  0 0.05em 0.02em rgba(255, 255, 255, 0.5) inset;;
+    transition: 0.1s;
+  }
+}
+
+.switch__lang{
+  font-size: 16px;
+  color: #9d9493;
+}
+
+@import "./resize.scss";
